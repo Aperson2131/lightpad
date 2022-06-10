@@ -52,19 +52,19 @@ class BaseConfig {
         // For Monitor 5:4 and 4:3
         if ((screen_w / (double) screen_h) < 1.4) {
             grid_x = 5;
-            grid_y = 5;
+            grid_y = 3;
         } else if (screen_h == 600) { // Netbook 1024x600px
-            grid_y = 6;
-            grid_x = 4;
+            grid_y = 5;
+            grid_x = 3;
         } else if (screen_h == 720) { // HD 1280x720px
-            grid_y = 7;
-            grid_x = 5;
+            grid_y = 5;
+            grid_x = 3;
         } else if (screen_h == 1080) { // Full HD 1920x1080px
-            grid_y = 9;
-            grid_x = 7;
+            grid_y = 5;
+            grid_x = 3;
         } else { // Monitor 16:9
-            grid_y = 6;
-            grid_x = 5;
+            grid_y = 5;
+            grid_x = 3;
         }
     }
 }
